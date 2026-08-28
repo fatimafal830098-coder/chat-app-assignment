@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #d9dbd5;
+}
+
+.center {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.muted {
+  color: #667781;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.green {
+  color: #008069;
+}
+
+.pad {
+  padding: 16px;
+}
+
+.error {
+  background: #ffe6e6;
+  color: #b00020;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+
+/* ---------- Auth ---------- */
+
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 380px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+
+.auth-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #00a884;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 12px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-weight: 500;
+  color: #111b21;
+}
+
+.auth-card p.muted {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 13px;
+  color: #667781;
+  margin-bottom: 4px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #00a884;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #008f70;
+}
+
+
+/* ---------- Layout ---------- */
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.side {
+  width: 380px;
+  border-right: 1px solid #cbd1ce;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.side-head {
+  background: #f0f2f5;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+
+/* ---------- Avatar ---------- */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00a884;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+  flex-shrink: 0;
+}
+
+
+/* Different Avatar Colors */
+
+.avatar.red {
+  background: #e85d75;
+}
+
+.avatar.blue {
+  background: #4f7cff;
+}
+
+.avatar.purple {
+  background: #9b59b6;
+}
+
+.avatar.orange {
+  background: #e67e22;
+}
+
+.avatar.pink {
+  background: #e85d9e;
+}
+
+.avatar.teal {
+  background: #00a884;
+}
+
+.avatar.grey {
+  background: #6a7f8a;
+}
+
+
+/* ---------- Online / Offline Dot ---------- */
+
+.dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.dot.online {
+  background: #25d366;
+}
+
+.dot.offline {
+  background: #9aa0a6;
+}
+
+
+/* ---------- User Information ---------- */
+
+.name {
+  font-size: 15px;
+  color: #111b21;
+}
+
+.online-pill {
+  font-size: 12px;
+  color: #008069;
+  background: #e7f7ef;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.link-btn {
+  display: block;
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: #667781;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+/* ---------- Search ---------- */
+
+.search {
+  padding: 8px 12px;
+}
+
+.search input {
+  width: 100%;
+  padding: 8px 14px;
+  border: none;
+  background: #f0f2f5;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search input:focus {
+  background: #e8eaed;
+}
+
+
+/* ---------- User List ---------- */
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.row:hover {
+  background: #f5f7f8;
+}
+
+.row.active {
+  background: #e7f7ef;
+  border-left: 3px solid #00a884;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.badge {
+  background: #25d366;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 11px;
+  padding: 2px 7px;
+}
+
+
+/* ---------- Chat ---------- */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* White background like your previous UI */
+  background: #f3eee8;
+  position: relative;
+}
+  
+
+  /* Important for center positioning */
+.main-head {
+  background: #e1e4e2;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.body {
+  flex: 1;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.bubble {
+  max-width: 60%;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111b21;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.bubble.in {
+  background: #fff;
+  align-self: flex-start;
+}
+
+.bubble.out {
+  background: #d9fdd3;
+  align-self: flex-end;
+}
+
+.stamp {
+  font-size: 11px;
+  color: #667781;
+  float: right;
+  margin: 6px 0 -2px 8px;
+}
+
+
+/* ---------- Message Input ---------- */
+
+.foot {
+  background: #f0f2f5;
+  padding: 10px 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.foot input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.send {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00a884;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background: #008f70;
+}
+
+
+/* ---------- Empty Chat ---------- */
+
+.empty {
+  position: absolute;
+
+  /* Full right-side area */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Exact center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #667781;
+  gap: 8px;
+}
+
+.empty h3 {
+  color: #41525d;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.empty p {
+  font-size: 13px;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+  .app {
+    flex-direction: column;
+  }
+
+  .side {
+    width: 100%;
+  }
+
+  .body {
+    padding: 14px;
+  }
+
+  .bubble {
+    max-width: 80%;
+  }
+}
