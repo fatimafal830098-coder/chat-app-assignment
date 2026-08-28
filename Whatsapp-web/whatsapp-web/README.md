@@ -66,7 +66,7 @@ JWT • Cookies
 ### 🔐 Login
 
 <p align="center">
-  <img src="server/screenshot/login.png" width="750" alt="Login"/>
+  <img src="screenshot/login.png" width="750" alt="Login"/>
 </p>
 
 ---
@@ -74,7 +74,7 @@ JWT • Cookies
 ### 📝 Register
 
 <p align="center">
-  <img src="server/screenshot/register.png" width="750" alt="Register"/>
+  <img src="screenshot/register.png" width="750" alt="Register"/>
 </p>
 
 ---
@@ -82,7 +82,7 @@ JWT • Cookies
 ### 🟢 Online Users
 
 <p align="center">
-  <img src="server/screenshot/online.png" width="750" alt="Online Users"/>
+  <img src="screenshot/online.png" width="750" alt="Online Users"/>
 </p>
 
 ---
@@ -90,7 +90,7 @@ JWT • Cookies
 ### ⌨️ Typing Indicator
 
 <p align="center">
-  <img src="server/screenshot/typing.png" width="750" alt="Typing Indicator"/>
+  <img src="screenshot/typing.png" width="750" alt="Typing Indicator"/>
 </p>
 
 ---
@@ -98,7 +98,7 @@ JWT • Cookies
 ### 🔔 Unread Messages
 
 <p align="center">
-  <img src="server/screenshot/unview.png" width="750" alt="Unread Messages"/>
+  <img src="screenshot/unread.png" width="750" alt="Unread Messages"/>
 </p>
 
 ---
@@ -106,7 +106,7 @@ JWT • Cookies
 ### 🖥️ Development Setup
 
 <p align="center">
-  <img src="server/screenshot/two-terminals.png" width="750" alt="Two Terminals"/>
+  <img src="screenshot/two-terminals.png" width="750" alt="Two Terminals"/>
 </p>
 
 ---
